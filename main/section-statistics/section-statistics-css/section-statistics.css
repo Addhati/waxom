@@ -4,13 +4,15 @@
   width: 100%;
   background-color: #4a3021;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  padding: 0 12vw;
+  box-sizing: border-box;
 }
 .statistics-article {
   text-align: center;
   width: 10vw;
-  margin-right: 5vw;
+  cursor: pointer;
 }
 .statistics-article .statistics-article__img {
   fill: #c7b299;
@@ -40,9 +42,6 @@
   width: 2.1VW;
   height: 0.15VW;
   margin: 0 auto;
-}
-.statistics-article:last-child {
-  margin-right: 0;
 }
 .statistics-article_clients:hover .statistics-article__img_clients,
 .statistics-article_coffee:hover .statistics-article__img_coffee,

@@ -10,6 +10,34 @@
   grid-template-rows: repeat(14, 1fr);
   align-items: center;
 }
+.header .arrow-left,
+.header .arrow-right {
+  fill: #ffffff;
+  width: 2vw;
+  height: 4vw;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.header .arrow-left:hover,
+.header .arrow-right:hover,
+.header .arrow-left:hover,
+.header .arrow-right:hover {
+  fill: #d3c1ad;
+}
+.header .arrow-left {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 9;
+  justify-self: flex-start;
+}
+.header .arrow-right {
+  grid-column-start: 11;
+  grid-column-end: 12;
+  grid-row-start: 7;
+  grid-row-end: 9;
+  justify-self: flex-end;
+}
 .logo {
   grid-column-start: 2;
   grid-column-end: 4;
@@ -76,34 +104,6 @@
 .nav__extra .bag:hover,
 .nav__extra .search:hover {
   fill: #c7b29a;
-}
-.arrow-left,
-.arrow-right {
-  fill: #ffffff;
-  width: 2vw;
-  height: 4vw;
-  opacity: 0.5;
-  cursor: pointer;
-}
-.arrow-left:hover,
-.arrow-right:hover,
-.arrow-left:hover,
-.arrow-right:hover {
-  fill: #d3c1ad;
-}
-.arrow-left {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 7;
-  grid-row-end: 9;
-  justify-self: flex-start;
-}
-.arrow-right {
-  grid-column-start: 11;
-  grid-column-end: 12;
-  grid-row-start: 7;
-  grid-row-end: 9;
-  justify-self: flex-end;
 }
 .site-info {
   grid-column-start: 4;

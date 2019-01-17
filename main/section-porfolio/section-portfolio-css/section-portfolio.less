@@ -2,10 +2,54 @@
     padding: 5vw 7vw;
     text-align: center;
 
-    .blog {
+
+    .section-porfolio__hedline {
+        color: #555555;
+        font-size: 2vw;
+        font-weight: 600;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .section-porfolio__description {
+        font-family: Montserrat;
+        color: #8c8c8c;
+        font-size: 1.2vw;
+        font-weight: 300;
+        line-height: 2vw;
+        margin-bottom: 2.8vw;
+        width: 50vw;
+        margin: 1.7vw auto 2.8vw;
+    }
+
+    .section-porfolio__nav {
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        width: 50vw;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+    .section-porfolio__nav-item {
+        display: block;
+        outline: 1px solid lightgrey;
+        text-decoration: none;
+        font-family: Montserrat;
+        color: #8c8c8c;
+        font-size: 1vw;
+        font-weight: 300;
+        line-height: 2.4vw;
+        width: 8vw;
+        height: 2.4vw;
+
+        &:hover {
+            background-color: #998675;
+            color: #ffffff;
+        }
+    }
+
+    .section-porfolio__nav-item_active {
+        background-color: #998675;
+        color: #ffffff;
     }
 
     .section-porfolio__button {
@@ -33,54 +77,10 @@
     }
 }
 
-.section-porfolio__article {
-    width: 50vw;
-    margin: 0 auto;
-
-    .section-porfolio__article-hedline {
-        color: #555555;
-        font-size: 2vw;
-        font-weight: 600;
-        text-align: center;
-        margin: 0;
-    }
-
-    .section-porfolio__article-p {
-        font-family: Montserrat;
-        color: #8c8c8c;
-        font-size: 1.2vw;
-        font-weight: 300;
-        line-height: 2vw;
-        margin-bottom: 2.8vw;
-    }
-
-    .section-porfolio__nav {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .section-porfolio__nav-item {
-        display: block;
-        outline: 1px solid lightgrey;
-        text-decoration: none;
-        font-family: Montserrat;
-        color: #8c8c8c;
-        font-size: 1vw;
-        font-weight: 300;
-        line-height: 2.4vw;
-        width: 8vw;
-        height: 2.4vw;
-
-        &:hover {
-            background-color: #998675;
-            color: #ffffff;
-        }
-    }
-
-    .section-porfolio__nav-item_active {
-        background-color: #998675;
-        color: #ffffff;
-    }
+.projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .porfolio__article {
@@ -93,6 +93,7 @@
     text-align: left;
     margin-top: 3.5vw;
     position: relative;
+    cursor: pointer;
 
     &:hover {
         background-color: rgb(54, 47, 45);
@@ -113,7 +114,7 @@
     &:hover .porfolio__article-search {
         display: block;
     }
-    
+
     &:hover .porfolio__article-img::before {
         background-color: rgb(54, 47, 45);
     }

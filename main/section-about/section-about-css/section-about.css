@@ -5,24 +5,25 @@
   padding-top: 6vw;
   position: relative;
 }
-.article-about {
-  width: 54vw;
-  text-align: center;
-  margin: 0 auto;
-}
-.article-about .article-about__headline {
+.section-about .article-about__headline {
   color: #555555;
   font-size: 2vw;
   font-weight: 600;
   margin: 0 0 1.8vw;
+  text-align: center;
+  margin: 0 auto;
 }
-.article-about .article-about__p {
+.section-about .article-about__description {
   font-family: Montserrat;
   color: #8c8c8c;
   font-size: 1.2vw;
   font-weight: 300;
   line-height: 2vw;
   margin: 0 0 2.8vw;
+  width: 54vw;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 1.7vw;
 }
 .article-about__img_left {
   position: absolute;

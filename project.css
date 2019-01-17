@@ -7,6 +7,7 @@
 @import url('main/section-video/section-video-css/section-video.css');
 @import url('main/section-mobile/section-mobile-css/section-mobile.css');
 @import url('main/section-statistics/section-statistics-css/section-statistics.css');
+@import url('main/section-blog/section-blog-css/section-blog.css');
 @import url('main/section-partners/section-partners-css/section-partners.css');
 @import url('main/footer/footer-css/footer.css');
 html {
@@ -17,7 +18,4 @@ body {
   width: 100%;
   margin: 0 auto;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
-}
-.section-blog {
-  height: 55vw;
 }
