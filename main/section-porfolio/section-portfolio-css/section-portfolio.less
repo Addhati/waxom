@@ -1,0 +1,259 @@
+.section-porfolio {
+    padding: 5vw 7vw;
+    text-align: center;
+
+    .blog {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .section-porfolio__button {
+        display: block;
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.24);
+        border-radius: 3px;
+        background-color: #998675;
+        width: 12vw;
+        height: 3.8vw;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1vw;
+        font-weight: 700;
+        line-height: 3.8vw;
+        text-align: center;
+        margin: 3.5vw auto 0;
+
+        &:hover {
+            background-color: #8d6e63;
+        }
+
+        &:active {
+            box-shadow: none;
+        }
+    }
+}
+
+.section-porfolio__article {
+    width: 50vw;
+    margin: 0 auto;
+
+    .section-porfolio__article-hedline {
+        color: #555555;
+        font-size: 2vw;
+        font-weight: 600;
+        text-align: center;
+        margin: 0;
+    }
+
+    .section-porfolio__article-p {
+        font-family: Montserrat;
+        color: #8c8c8c;
+        font-size: 1.2vw;
+        font-weight: 300;
+        line-height: 2vw;
+        margin-bottom: 2.8vw;
+    }
+
+    .section-porfolio__nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .section-porfolio__nav-item {
+        display: block;
+        outline: 1px solid lightgrey;
+        text-decoration: none;
+        font-family: Montserrat;
+        color: #8c8c8c;
+        font-size: 1vw;
+        font-weight: 300;
+        line-height: 2.4vw;
+        width: 8vw;
+        height: 2.4vw;
+
+        &:hover {
+            background-color: #998675;
+            color: #ffffff;
+        }
+    }
+
+    .section-porfolio__nav-item_active {
+        background-color: #998675;
+        color: #ffffff;
+    }
+}
+
+.porfolio__article {
+    width: 26vw;
+    height: auto;
+    margin: 0;
+    background-color: #fbfaf8;
+    padding-bottom: 2.5vw;
+    position: relative;
+    text-align: left;
+    margin-top: 3.5vw;
+    position: relative;
+
+    &:hover {
+        background-color: rgb(54, 47, 45);
+    }
+
+    &:hover .porfolio__article-h3 {
+        color: #ffffff;
+    }
+
+    &:hover .porfolio__article-p {
+        color: #c7b299;
+    }
+
+    &:hover .porfolio__article-link {
+        display: block;
+    }
+
+    &:hover .porfolio__article-search {
+        display: block;
+    }
+    
+    &:hover .porfolio__article-img::before {
+        background-color: rgb(54, 47, 45);
+    }
+
+    .porfolio__article-img::before {
+        content: "";
+        width: 2vw;
+        height: 2vw;
+        position: absolute;
+        top: calc(18vw-1vw);
+        left: 1vw;
+        background-color: #fbfaf8;
+        transform: rotate(45deg);
+    }
+
+    .porfolio__article-img {
+        width: 26vw;
+        height: 18vw;
+        margin: 0;
+    }
+
+    .porfolio__article-img_1 {
+        background: url(../section-portfolio-img/img_1.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    &:hover .porfolio__article-img_1 {
+        background: rgb(153, 134, 117) url(../section-portfolio-img/img_1.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-blend-mode: multiply;
+    }
+
+    .porfolio__article-img_2 {
+        background: url(../section-portfolio-img/img_2.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    &:hover .porfolio__article-img_2 {
+        background: rgb(153, 134, 117) url(../section-portfolio-img/img_2.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-blend-mode: multiply;
+    }
+
+    .porfolio__article-img_3 {
+        background: url(../section-portfolio-img/img_3.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    &:hover .porfolio__article-img_3 {
+        background: rgb(153, 134, 117) url(../section-portfolio-img/img_3.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-blend-mode: multiply;
+    }
+
+    .porfolio__article-img_4 {
+        background: url(../section-portfolio-img/img_4.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    &:hover .porfolio__article-img_4 {
+        background: rgb(153, 134, 117) url(../section-portfolio-img/img_4.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-blend-mode: multiply;
+    }
+
+    .porfolio__article-img_5 {
+        background: url(../section-portfolio-img/img_5.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    &:hover .porfolio__article-img_5 {
+        background: rgb(153, 134, 117) url(../section-portfolio-img/img_5.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-blend-mode: multiply;
+    }
+
+    .porfolio__article-img_6 {
+        background: url(../section-portfolio-img/img_2.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    &:hover .porfolio__article-img_6 {
+        background: rgb(153, 134, 117) url(../section-portfolio-img/img_2.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-blend-mode: multiply;
+    }
+
+    .porfolio__article-h3 {
+        color: #c7b29a;
+        font-size: 1.5vw;
+        font-weight: 500;
+        margin: 2.5vw 0 0 2.5vw;
+    }
+
+    .porfolio__article-p {
+        font-family: Montserrat;
+        color: #d1d1d1;
+        font-size: 1vw;
+        font-weight: 300;
+        line-height: 1.4vw;
+        margin-left: 2.5vw;
+    }
+
+    .porfolio__article-link {
+        cursor: pointer;
+        position: absolute;
+        left: 9vw;
+        top: 8vw;
+        width: 1.9vw;
+        fill: #ffffff;
+        display: none;
+
+        &:hover {
+            fill: #c7b299;
+        }
+    }
+
+    .porfolio__article-search {
+        cursor: pointer;
+        position: absolute;
+        left: 13vw;
+        top: 8vw;
+        width: 1.9vw;
+        fill: #ffffff;
+        display: none;
+
+        &:hover {
+            fill: #c7b299;
+        }
+    }
+}

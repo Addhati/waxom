@@ -1,0 +1,218 @@
+.header {
+    height: 100vh;
+    width: 100%;
+    background: url(../header-img/header.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    align-items: center;
+}
+
+.logo {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+
+    .logo__img {
+        width: auto;
+        height: 4vw;
+    }
+
+    .logo__text {
+        display: block;
+        color: #ffffff;
+        font-size: 2.5vw;
+        font-weight: 400;
+        line-height: 4vw;
+        text-decoration: none;
+    }
+}
+
+.nav {
+    grid-column-start: 5;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    .nav__menu {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .nav__item {
+        list-style-type: none;
+    }
+
+    .nav__item_link {
+        display: block;
+        text-decoration: none;
+        font-family: Montserrat;
+        color: #ffffff;
+        font-size: 1vw;
+        font-weight: 300;
+
+        &:hover {
+            color: #c7b29a;
+        }
+    }
+}
+
+.nav__extra {
+    height: 1.4vw;
+    height: auto;
+    grid-column-start: 11;
+    grid-column-end: 12;
+    justify-self: right;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    .bag,
+    .search {
+        fill: #fff;
+        width: 1.4vw;
+        height: 1.4vw;
+        margin-right: 0.5vw;
+
+        &:hover,
+        &:hover {
+            fill: #c7b29a;
+        }
+    }
+}
+
+// ARROWS
+.arrow-left,
+.arrow-right {
+    fill: #ffffff;
+    width: 2vw;
+    height: 4vw;
+    opacity: 0.5;
+    cursor: pointer;
+    &:hover,
+    &:hover {
+        fill: #d3c1ad;
+    }
+}
+
+
+
+.arrow-left {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    justify-self: flex-start;
+}
+
+.arrow-right {
+    grid-column-start: 11;
+    grid-column-end: 12;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    justify-self: flex-end;
+}
+
+.site-info {
+    grid-column-start: 4;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 11;
+    text-align: center;
+
+    .site-info__h2 {
+        font-family: Raleway;
+        color: #ffffff;
+        font-size: 2.5vw;
+        font-weight: 500;
+        margin: 0 0 1.2vw;
+    }
+
+    .site-info__h1 {
+        font-family: Raleway;
+        color: #ffffff;
+        font-size: 3.8vw;
+        font-weight: 700;
+        margin: 0 0 1.2vw;
+    }
+
+    .site-info__p {
+        font-family: Montserrat;
+        color: #ffffff;
+        font-size: 1.2vw;
+        font-weight: 300;
+        line-height: 1.8vw;
+        margin: 0;
+    }
+}
+
+.header-button {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 11;
+    grid-row-end: 12;
+    justify-self: center;
+
+    .header-button__link {
+        display: block;
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.24);
+        border-radius: 3px;
+        background-color: #998675;
+        width: 12vw;
+        height: 3.8vw;
+        text-decoration: none;
+        font-family: Raleway;
+        color: #ffffff;
+        font-size: 1vw;
+        font-weight: 700;
+        line-height: 3.8vw;
+        text-align: center;
+
+        &:hover {
+            background-color: #8d6e63;
+        }
+
+        &:active {
+            background-color: none;
+        }
+    }
+}
+
+
+.slider-nav {
+    width: 7vw;
+    display: flex;
+    justify-content: space-around;
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 14;
+    grid-row-end: 15;
+    align-self: flex-start;
+    justify-self: center;
+    .slider-nav__limk {
+        width: 1.2vw;
+        height: 1.2vw;
+        background: url(../header-img/point.png) no-repeat;
+        background-position: center center;
+        display: block;
+        text-decoration: none;
+
+        &:hover {
+            background: url(../header-img/circle.png) no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+    }
+
+    .slider-nav__link_active {
+        background: url(../header-img/circle.png) no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}

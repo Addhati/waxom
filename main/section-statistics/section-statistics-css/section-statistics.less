@@ -1,0 +1,64 @@
+.section-statistics {
+    height: 21.5vw;
+    width: 100%;
+    background-color: rgb(74, 48, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.statistics-article {
+    text-align: center;
+    width: 10vw;
+    margin-right: 5vw;
+
+    .statistics-article__img {
+        fill: #c7b299;
+        width: 3vw;
+        height: 3vw;
+        margin: 0 auto;
+        margin-bottom: 2.1vw;
+        transition: 1s;
+    }
+    
+    .statistics-article__count {
+        font-family: Montserrat;
+        color: #ffffff;
+        font-size: 3.5vw;
+        font-weight: 200;
+        line-height: 2.5vw;
+        margin-bottom: 1.5vw;
+
+    }
+
+    .statistics-article__headline {
+        font-family: Montserrat;
+        color: #c7b299;
+        font-size: 1vw;
+        font-weight: 300;
+        margin: 0 0 2.1vw 0;
+
+    }
+
+    .statistics-article__bottom-line {
+        background-color: #ffffff;
+        width: 2.1VW;
+        height: 0.15VW;
+        margin: 0 auto;
+    }
+}
+
+.statistics-article:last-child {
+    margin-right: 0;
+}
+
+.statistics-article_clients:hover .statistics-article__img_clients,
+.statistics-article_coffee:hover .statistics-article__img_coffee,
+.statistics-article_blog:hover .statistics-article__img_blog,
+.statistics-article_liker:hover .statistics-article__img_liker,
+.statistics-article_launched:hover .statistics-article__img_launched {
+    cursor: pointer;
+        transform: rotate(720deg);
+}

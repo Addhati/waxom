@@ -1,0 +1,76 @@
+.section-mobile {
+    background-color: rgb(251, 250, 248);
+    display: flex;
+    justify-content: center;
+    padding-top: 5.5vw;
+}
+
+.section-mobile__img {
+    width: 30vw;
+    height: 45vw;
+}
+
+.section-mobile__article {
+    width: 48vw;
+    margin-left: 2vw;
+    margin-top: 7vw;
+
+    .section-mobile__article-headline {
+        font-family: Raleway;
+        color: #555555;
+        font-size: 2.1vw;
+        font-weight: 600;
+    }
+
+    .section-mobile__article-p {
+        font-family: Montserrat;
+        color: #8c8c8c;
+        font-size: 1.1vw;
+        font-weight: 300;
+        line-height: 2vw;
+    }
+
+    .section-mobile__article-list {}
+
+    .section-mobile__article-list-item {
+        font-family: Montserrat;
+        color: #8c8c8c;
+        font-size: 1.1vw;
+        font-weight: 300;
+        line-height: 2vw;
+        list-style-type: none;
+        position: relative;
+        margin-left: 2vw;
+    }
+
+    .section-mobile__article-list-item::before {
+        content: "";
+        background-image: url(../section-mobile-img/li.png);
+        background-size: cover;
+        background-position: center center;
+        width: 1.5vw;
+        height: 1.5vw;
+        position: absolute;
+        top: 0.3vw;
+        left: -2.5vw;
+
+    }
+}
+
+.section-mobile__article-list-item::before:hover {
+    animation-name: myAnimation;
+    animation-duration: 2s;
+}
+
+
+
+
+@keyframes myAnimation {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100%;
+    }
+}
