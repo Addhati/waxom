@@ -48,6 +48,7 @@
 .logo .logo__img {
   width: auto;
   height: 4vw;
+  fill: white;
 }
 .logo .logo__text {
   display: block;
@@ -225,6 +226,7 @@
   .logo .logo__img {
     width: auto;
     height: 8vh;
+    fill: white;
   }
   .logo .logo__text {
     display: none;
