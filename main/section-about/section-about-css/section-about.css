@@ -81,7 +81,7 @@
 .section-about__footer .section-about-footer__button {
   display: block;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
+  border-radius: 0.25vw;
   background-color: #998675;
   width: 12vw;
   height: 3.8vw;
@@ -98,4 +98,20 @@
 }
 .section-about__footer .section-about-footer__button:active {
   box-shadow: none;
+}
+@media screen and (max-width: 550px) {
+  .section-about {
+    height: 60vw;
+  }
+  .section-about .article-about__headline {
+    font-size: 2vh;
+    margin: 0 0 1.8vh;
+  }
+  .section-about .article-about__description {
+    font-size: 1.2vh;
+    line-height: 2vh;
+    margin: 0 0 2.8vh;
+    width: 80vw;
+    margin: 1.7vh auto;
+  }
 }

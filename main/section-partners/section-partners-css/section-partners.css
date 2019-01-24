@@ -10,8 +10,17 @@
   margin-bottom: -1px;
 }
 .section-partners img {
-  transition: 0.5s;
+  transition: 0.7s;
 }
 .section-partners img:hover {
   transform: scale(1.5);
+}
+@media screen and (max-width: 550px) {
+  .section-partners {
+    height: 30vw;
+  }
+  .section-partners img {
+    width: 15vw;
+    height: auto;
+  }
 }
