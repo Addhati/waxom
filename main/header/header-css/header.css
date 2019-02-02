@@ -87,7 +87,7 @@
 .nav .nav__item_link:hover {
   color: #c7b29a;
 }
-.nav__extra {
+.nav-extra {
   justify-self: right;
   align-self: center;
   grid-column-start: 11;
@@ -95,8 +95,8 @@
   grid-row-start: 2;
   grid-row-end: 3;
 }
-.nav__extra .bag,
-.nav__extra .search {
+.nav-extra .nav-extra__bag,
+.nav-extra .nav-extra__search {
   fill: #fff;
   width: 1.4vw;
   height: 1.4vw;
@@ -104,10 +104,10 @@
   justify-self: right;
   align-self: center;
 }
-.nav__extra .bag:hover,
-.nav__extra .search:hover,
-.nav__extra .bag:hover,
-.nav__extra .search:hover {
+.nav-extra .nav-extra__bag:hover,
+.nav-extra .nav-extra__search:hover,
+.nav-extra .nav-extra__bag:hover,
+.nav-extra .nav-extra__search:hover {
   fill: #c7b29a;
 }
 .site-info {
@@ -234,13 +234,13 @@
   .nav {
     display: none;
   }
-  .nav__extra {
+  .nav-extra {
     height: 1.4vw;
   }
-  .nav__extra .bag {
+  .nav-extra .nav-extra__bag {
     display: none;
   }
-  .nav__extra .search {
+  .nav-extra .nav-extra__search {
     width: 3vh;
     height: 3vh;
   }

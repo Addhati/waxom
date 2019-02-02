@@ -9,17 +9,19 @@
   align-items: center;
   margin-bottom: -1px;
 }
-.section-partners img {
+.section-partners .section-partners__img {
+  width: 15vw;
+  height: auto;
   transition: 0.7s;
 }
-.section-partners img:hover {
+.section-partners .section-partners__img:hover {
   transform: scale(1.5);
 }
 @media screen and (max-width: 550px) {
   .section-partners {
     height: 30vw;
   }
-  .section-partners img {
+  .section-partners .section-partners__img {
     width: 15vw;
     height: auto;
   }
